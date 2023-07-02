@@ -18,7 +18,7 @@ private static final String DB_URL = "jdbc:mysql://localhost:3306/Student_detail
 
     private static void createTables(Connection connection) throws SQLException {
         String createTableQuery = "CREATE TABLE IF NOT EXISTS StudentRecords (" +
-                "id INT AUTO_INCREMENT," +
+                "id INT ," +
                 "name VARCHAR(100) NOT NULL," +
                 "regno VARCHAR(20) NOT NULL," +
                 "sem1 INT NOT NULL," +
